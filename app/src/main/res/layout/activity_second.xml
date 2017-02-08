@@ -52,15 +52,63 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:padding="16dp">
+                    <com.rey.material.widget.CheckBox
+                        android:id="@+id/switches_cb1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Checkbox 1"
+                        android:checked="true"
+                        android:gravity="center_vertical"
+                        style="@style/LightCheckBoxDrawable"/>
+                    <com.rey.material.widget.Slider
+                        android:id="@+id/slider_sl_continuous_disable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        style="@style/LightSliderDiscrete"
+                        />
 
+                    <com.rey.material.widget.Button
+                        android:id="@+id/button_bt_raise"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="BUTTON"
+                        style="@style/LightRaiseButtonRippleStyle"
+                        />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Lorem ipsum" />
+                    <ToggleButton
+                        android:text="ToggleButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/toggleButton"
+                        android:layout_weight="1" />
 
+                    <CheckBox
+                        android:text="CheckBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBox" />
+
+                    <RadioButton
+                        android:text="RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                    <RadioButton
+                        android:text="RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
                     <android.support.design.widget.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
+
+
+
 
                         <EditText
                             android:id="@+id/nameEt"
@@ -93,9 +141,9 @@
                         android:text="Sed quam eros" />
 
                     <Button
+                        android:id="@+id/button"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/button"
                         android:text="ok" />
 
                 </LinearLayout>

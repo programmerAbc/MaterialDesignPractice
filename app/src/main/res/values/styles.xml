@@ -16,5 +16,35 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-
+    <style name="LightRaiseColorButtonRippleStyle" parent="Material.Drawable.Ripple.Touch.Light">
+        <item name="android:background">@drawable/bg_bt_raise_color</item>
+        <item name="rd_rippleColor">#33000000</item>
+        <item name="rd_leftPadding">1dp</item>
+        <item name="rd_topPadding">1dp</item>
+        <item name="rd_rightPadding">1dp</item>
+        <item name="rd_bottomPadding">2dp</item>
+        <item name="rd_delayClick">afterRelease</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Button</item>
+        <item name="android:textColor">@color/abc_primary_text_material_dark</item>
+    </style>
+    <style name="LightRaiseButtonRippleStyle" parent="Material.Drawable.Ripple.Touch.Light">
+        <item name="android:background">@drawable/bg_bt_raise</item>
+        <item name="rd_leftPadding">1dp</item>
+        <item name="rd_topPadding">1dp</item>
+        <item name="rd_rightPadding">1dp</item>
+        <item name="rd_bottomPadding">2dp</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Button</item>
+        <item name="android:textColor">@color/abc_primary_text_material_light</item>
+    </style>
+    <style name="LightSlider" parent="Material.Widget.Slider">
+        <item name="sl_primaryColor">@color/colorPrimary</item>
+    </style>
+    <style name="LightSliderDiscrete" parent="Material.Widget.Slider.Discrete">
+        <item name="sl_primaryColor">@color/colorPrimary</item>
+        <item name="sl_stepValue">1</item>
+    </style>
+    <style name="LightCheckBoxDrawable" parent="Material.Drawable.CheckBox">
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Body1</item>
+        <item name="android:textColor">#FF000000</item>
+    </style>
 </resources>

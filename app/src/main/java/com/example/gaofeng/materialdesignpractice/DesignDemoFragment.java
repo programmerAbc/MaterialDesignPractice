@@ -3,6 +3,7 @@ package com.example.gaofeng.materialdesignpractice;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Gravity;
@@ -37,7 +38,7 @@ public class DesignDemoFragment extends Fragment {
         }
         View v=inflater.inflate(R.layout.fragment_list_view,container,false);
         RecyclerView recyclerView=(RecyclerView)v.findViewById(R.id.recyclerview);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        recyclerView.setLayoutManager(new GridLayoutManager(getContext(),2));
         recyclerView.setAdapter(new DesignDemoRecyclerAdapter(items));
         return v;
     }
